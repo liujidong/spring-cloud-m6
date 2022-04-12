@@ -3,6 +3,14 @@ spring:
     name: config #1
   profiles:
     active: native #2 
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+    discovery:
+      # service-name: ${spring.application.name}
+      heartbeat:
+        enabled: true
     
 eureka:
   instance:

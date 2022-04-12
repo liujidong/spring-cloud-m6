@@ -7,6 +7,14 @@ spring:
       discovery:
         enabled: true
         service-id: CONFIG
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        heartbeat:
+          enabled: true
+        prefer-ip-address: true
+        ip-address: localhost
 eureka:
   instance:
     non-secure-port: ${server.port:8083}

@@ -27,9 +27,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>        
     </dependencies>
+    <!-- 
     <build>
         <plugins>
             <plugin>
@@ -49,4 +50,5 @@
             </plugin>
         </plugins>
     </build>
+     -->
 </project>
